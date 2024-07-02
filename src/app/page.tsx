@@ -20,10 +20,20 @@ export default function Home() {
   return (
     <>
       {/* Main content */}
+      <nav className="p-4 md:p-6 shadow-md bg-gray-900 text-white">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+          <a href="#" className="text-xl font-bold mb-4 md:mb-0">
+            Secret Echo ~by Javo
+          </a>
+          <Link href="/sign-in">
+            <Button className="w-full md:w-auto bg-slate-100 text-black" variant={'outline'}>Login</Button>
+          </Link>
+        </div>
+      </nav>
       <main className="flex-grow flex flex-col items-center justify-center px-4 md:px-24 py-12 bg-gray-800 text-white">
         <section className="text-center mb-8 md:mb-12">
           <h1 className="text-3xl md:text-5xl font-bold">
-            Dive into the World of Anonymous Feedback
+            Into the World of Unfiltered Anonimity
           </h1>
           <p className="mt-3 md:mt-4 text-base md:text-lg">
             Secret Echo - Where your identity remains a secret.
